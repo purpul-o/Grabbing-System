@@ -1,6 +1,6 @@
 # Grabbing System
 
-## Source Code
+## Source
 You can access the source code by either installing the RBXM.rbxm file or by viewing the contents of the Source folder.
 
 ## Overview
