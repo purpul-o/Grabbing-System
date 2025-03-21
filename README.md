@@ -1,5 +1,8 @@
 # Grabbing System
 
+## Source Code
+You can access the source code by either installing the RBXM.rbxm file or by viewing the contents of the Source folder.
+
 ## Overview
 Grabbing system, MouseButton1 to grab/ungrab.
 You can throw things.
