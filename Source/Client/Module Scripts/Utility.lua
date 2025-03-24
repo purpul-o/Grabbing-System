@@ -5,16 +5,16 @@ local runService = game:GetService("RunService")
 local players = game:GetService("Players")
 
 local player = players.LocalPlayer
-local character = player.Character
+local character = player.Character or player.CharacterAdded:Wait()
 
-local humanoidRootPart = character.HumanoidRootPart
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
 
-local modules = replicatedStorage.Modules
-local remotes = replicatedStorage.Remotes
+local modules = replicatedStorage:WaitForChild("Modules")
+local remotes = replicatedStorage:WaitForChild("Remotes")
 
-local network = remotes.Network
+local network = remotes:WaitForChild("Network")
 
-local configuration = require(modules.Configuration)
+local configuration = require(modules:WaitForChild("Configuration"))
 local shared = configuration.Shared
 
 local mouse = player:GetMouse()
