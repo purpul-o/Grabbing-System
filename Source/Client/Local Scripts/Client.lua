@@ -1,7 +1,3 @@
-if not game.Loaded then
-	game.Loaded:Wait()
-end
-
 --// Variables
 
 local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -14,7 +10,7 @@ local modules = script.Modules
 local core = modules.Core
 
 local utility = require(core.Utility)
-local pickable = workspace.PICKABLE
+local pickable = workspace:WaitForChild("PICKABLE")
 
 --// Core
 
