@@ -9,7 +9,7 @@ local player = players.LocalPlayer
 local modules = script.Modules
 local core = modules.Core
 
-local utility = require(core.Utility)
+local main = require(core.Utility)
 local pickable = workspace:WaitForChild("PICKABLE")
 
 --// Core
@@ -19,7 +19,7 @@ userInputService.InputBegan:Connect(function(Input: InputObject, Processed: bool
 		return
 	end
 	
-	local main = utility.New()
+	local main = main.New()
 	local instance = main:Init()
 	
 	if not instance then
