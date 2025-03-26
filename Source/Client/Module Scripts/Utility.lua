@@ -19,7 +19,7 @@ local shared = configuration.Shared
 
 local mouse = player:GetMouse()
 
-local utility, main = {}, {}
+local main = {}
 main.__index = main
 
 --// Functions
@@ -79,9 +79,9 @@ function main:Init(): Instance?
 	return self.Target
 end
 
-function utility.New()
+function main.New()
 	local self = setmetatable({}, main)
 	return self
 end
 
-return utility
+return main
